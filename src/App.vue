@@ -1,25 +1,24 @@
 <script>
-  export default {
-  }
+import AppHeader from "@/components/AppHeader.vue";
+export default {
+  components: {
+    AppHeader,
+  },
+};
 </script>
-                npm run dev
+
 <template>
-  <h1>Hello, vue.js!</h1>
-  <!-- <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+  <div id="app">
+    <AppHeader />
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+    <div class="container mt-3">
+      <router-view />
     </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main> -->
+  </div>
 </template>
 
 <style>
-  .page {
+.page {
   max-width: 400px;
   margin: auto;
 }
